@@ -242,6 +242,12 @@ h3 {
   padding: 10px 16px;
 }
 
+.button:disabled,
+.app-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
 .primary,
 .button.primary,
 .app-button.primary {
@@ -486,6 +492,26 @@ textarea {
 .quiz-options button:hover,
 .calculator-grid button:hover {
   border-color: var(--primary);
+}
+
+.quiz-options button:disabled {
+  cursor: default;
+}
+
+.quiz-options button.correct {
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 18%, var(--surface));
+  color: var(--text);
+}
+
+.quiz-options button.wrong {
+  border-color: #dc2626;
+  background: color-mix(in srgb, #dc2626 13%, var(--surface));
+  color: var(--text);
+}
+
+.quiz-options button.selected {
+  box-shadow: inset 4px 0 0 var(--accent);
 }
 
 .result-line {

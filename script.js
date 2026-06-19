@@ -165,13 +165,24 @@ function initQuiz() {
       const button = document.createElement("button");
       button.type = "button";
       button.textContent = option;
+      button.dataset.answer = option;
       button.addEventListener("click", () => {
         if (answered) return;
         answered = true;
+        const optionButtons = optionsEl.querySelectorAll("button");
+        optionButtons.forEach((optionButton) => {
+          optionButton.disabled = true;
+          if (optionButton.dataset.answer === item.answer) {
+            optionButton.classList.add("correct");
+          }
+        });
+
         if (option === item.answer) {
           score += 1;
+          button.classList.add("selected");
           resultEl.textContent = "Correct answer";
         } else {
+          button.classList.add("wrong");
           resultEl.textContent = `Correct answer: ${item.answer}`;
         }
         nextButton.disabled = false;
