@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App | Roshan Dev Hub</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="../index.html"><span class="brand-mark">RD</span><span>Roshan Dev Hub</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links"><a href="../index.html">Home</a><a href="../blog/index.html">Blog</a><a href="index.html">Apps</a><a href="../index.html#contact">Contact</a><button class="theme-toggle" type="button">Theme</button></div>
+    </nav>
+  </header>
+  <main class="tool-shell container">
+    <section class="tool-panel reveal">
+      <p class="eyebrow">Mini app</p>
+      <h1>Notes App</h1>
+      <p>Notes are saved automatically in localStorage.</p>
+      <div class="field-grid">
+        <label for="notesArea">Your note</label>
+        <textarea id="notesArea" data-notes placeholder="Write ideas, tasks, or project notes here..."></textarea>
+        <p class="result-line" data-notes-status>Ready</p>
+      </div>
+      <div class="app-actions"><a class="button secondary" href="index.html">Back to apps</a></div>
+    </section>
+  </main>
+  <script src="../script.js"></script>
+</body>
+</html>

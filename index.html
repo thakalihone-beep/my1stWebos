@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roshan Dev Hub | Frontend Developer</title>
+  <meta name="description" content="Roshan Dev Hub is a personal portfolio, developer blog, and mini web apps collection for a .com.np personal domain.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Roshan Dev Hub home">
+        <span class="brand-mark">RD</span>
+        <span>Roshan Dev Hub</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">Menu</button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="blog/index.html">Blog</a>
+        <a href="apps/index.html">Apps</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" type="button" aria-label="Toggle color theme">Theme</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Personal .com.np developer website</p>
+          <h1>Hi, I am Roshan.</h1>
+          <p class="hero-title">I build <span class="typing-text" data-words="frontend interfaces,JavaScript projects,mini web apps,developer tools"></span></p>
+          <p class="hero-intro">
+            I am a frontend developer focused on clean layouts, responsive design, and useful browser-based tools. This website brings my portfolio, blog, and web app collection into one home.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="apps/index.html">Open Apps</a>
+          </div>
+        </div>
+        <div class="profile-panel reveal" aria-label="Developer profile summary">
+          <div class="status-row">
+            <span class="status-dot"></span>
+            Available for frontend projects
+          </div>
+          <div class="code-card">
+            <span>const developer = {</span>
+            <span>&nbsp;&nbsp;name: "Roshan",</span>
+            <span>&nbsp;&nbsp;stack: ["HTML", "CSS", "JavaScript"],</span>
+            <span>&nbsp;&nbsp;domain: "roshan.com.np"</span>
+            <span>};</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I use to build the web</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>HTML</h3>
+            <p>Semantic pages, accessible structure, and SEO-friendly content.</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>CSS</h3>
+            <p>Responsive layouts, modern UI systems, animations, and themes.</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>JavaScript</h3>
+            <p>Interactive components, localStorage apps, quizzes, and utilities.</p>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Git</h3>
+            <p>Version control, clean commits, and project history management.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Featured work</h2>
+        </div>
+        <div class="card-grid">
+          <article class="project-card reveal">
+            <span class="project-tag">Clone</span>
+            <h3>Amazon Clone</h3>
+            <p>A responsive ecommerce homepage with product cards, navigation, and cart-style interactions.</p>
+            <a href="blog/building-my-amazon-clone.html">Read the build note</a>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-tag">WebOS</span>
+            <h3>Browser WebOS</h3>
+            <p>A desktop-style web experiment with app windows, calculator, notes, and a taskbar concept.</p>
+            <a href="blog/my-first-webos-project.html">View story</a>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-tag">Quiz</span>
+            <h3>Quiz App</h3>
+            <p>A JavaScript quiz with scoring, feedback, and a simple restart flow.</p>
+            <a href="apps/quiz.html">Open app</a>
+          </article>
+          <article class="project-card reveal">
+            <span class="project-tag">Utility</span>
+            <h3>Password Generator</h3>
+            <p>A small security utility for creating strong passwords with adjustable options.</p>
+            <a href="apps/password.html">Open app</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let us build something useful</h2>
+          <p>Send a message for portfolio feedback, frontend work, or collaboration on a small web app.</p>
+        </div>
+        <div class="contact-card reveal">
+          <a href="mailto:hello@roshan.com.np">hello@roshan.com.np</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Built with HTML, CSS, and JavaScript for Roshan Dev Hub.</p>
+      <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
