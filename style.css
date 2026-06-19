@@ -276,6 +276,19 @@ h3 {
   padding: 24px;
 }
 
+.profile-photo {
+  display: block;
+  width: min(260px, 100%);
+  aspect-ratio: 1;
+  margin: 0 auto 22px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  background: var(--surface-soft);
+  box-shadow: 0 14px 32px rgba(23, 32, 51, 0.16);
+}
+
 .status-row {
   display: flex;
   align-items: center;
@@ -533,6 +546,23 @@ textarea {
 .article-body h2 {
   margin-top: 32px;
   font-size: 1.55rem;
+}
+
+.article-meta {
+  margin: 10px 0 24px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 30;
+  width: 0;
+  height: 4px;
+  background: var(--accent);
 }
 
 .reveal {

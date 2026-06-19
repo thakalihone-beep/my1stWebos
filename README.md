@@ -8,7 +8,11 @@ A static personal developer website that combines a portfolio, a developer blog,
 my1stWebos/
   index.html
   style.css
-  script.js
+  main.js
+  calculator.js
+  quiz.js
+  todo.js
+  password.js
   blog/
     index.html
     my-first-webos-project.html
@@ -28,7 +32,8 @@ my1stWebos/
 - `blog/index.html` lists blog cards, and each blog post has its own HTML page.
 - `apps/index.html` lists the mini apps, and each app opens on its own page.
 - `style.css` contains the full responsive design, light theme, dark theme, cards, layout, and animations.
-- `script.js` powers the mobile menu, theme toggle, typing animation, reveal animations, localStorage notes, quiz, calculator, and password generator.
+- `main.js` powers the mobile menu, theme toggle, typing animation, and reveal animations.
+- `calculator.js`, `quiz.js`, `todo.js`, and `password.js` power the individual mini apps.
 
 ## Run locally
 
